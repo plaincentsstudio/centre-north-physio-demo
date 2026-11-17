@@ -90,11 +90,13 @@
       }
       .hero::after {
         content: ""; position: absolute; inset: 0;
-        background: linear-gradient(180deg, rgba(6,42,35,.42) 0%, rgba(6,42,35,.08) 34%, rgba(6,42,35,.55) 68%, rgba(5,36,30,.88) 100%);
+        background:
+          linear-gradient(90deg, rgba(6,42,35,.45) 0%, rgba(6,42,35,.12) 62%, rgba(6,42,35,0) 100%),
+          linear-gradient(180deg, rgba(6,42,35,.55) 0%, rgba(6,42,35,.45) 34%, rgba(6,42,35,.68) 68%, rgba(5,36,30,.92) 100%);
       }
       .hero-in { position: relative; z-index: 2; width: 100%; padding: 130px 0 56px; }
       .hero h1 { font-size: clamp(2.7rem, 7.2vw, 4.6rem); max-width: 12ch; line-height: 1.16; padding-bottom: .08em; text-shadow: 0 2px 24px rgba(0,0,0,.25); }
-      .hero .sub { margin: 16px 0 0; font-size: clamp(1.02rem, 2.4vw, 1.25rem); max-width: 34rem; color: rgba(255,255,255,.94); }
+      .hero .sub { margin: 16px 0 0; font-size: clamp(1.02rem, 2.4vw, 1.25rem); max-width: 34rem; color: #fff; text-shadow: 0 1px 14px rgba(0,0,0,.5), 0 0 3px rgba(0,0,0,.45); }
       .rating-chip {
         display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap;
         background: var(--chip-bg); color: var(--ink);
@@ -119,7 +121,7 @@
       .btn-light:hover { background: #eaf3ef; }
       .btn-ghost { background: rgba(255,255,255,.14); color: #fff; border: 1.5px solid rgba(255,255,255,.75); backdrop-filter: blur(4px); }
       .btn-ghost:hover { background: rgba(255,255,255,.26); }
-      .hero-addr { margin-top: 22px; display: flex; align-items: center; gap: 9px; font-size: .98rem; color: rgba(255,255,255,.95); }
+      .hero-addr { margin-top: 22px; display: flex; align-items: center; gap: 9px; font-size: .98rem; color: #fff; text-shadow: 0 1px 10px rgba(0,0,0,.55); }
       .hero-addr svg { width: 18px; height: 18px; flex: none; fill: currentColor; }
 
       /* ---------- sections ---------- */
